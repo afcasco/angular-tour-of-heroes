@@ -1,10 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Hero} from "../hero";
-import {NgFor, NgIf, UpperCasePipe} from "@angular/common";
+import {NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HeroService} from "../hero.service";
 import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
-import {MessageService} from "../message.service";
 import {RouterLink} from "@angular/router";
 
 @Component({
@@ -13,7 +12,6 @@ import {RouterLink} from "@angular/router";
   imports: [
     UpperCasePipe,
     FormsModule,
-    NgFor,
     NgIf,
     HeroDetailComponent,
     RouterLink
@@ -23,8 +21,13 @@ import {RouterLink} from "@angular/router";
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
+  selectedHero?: Hero;
 
   constructor(private heroService: HeroService) { }
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 
   ngOnInit(): void {
     this.getHeroes();
