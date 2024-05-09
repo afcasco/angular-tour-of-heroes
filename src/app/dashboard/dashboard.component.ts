@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
 import {Hero} from "../model/hero";
 import {HeroService} from "../services/hero.service";
 import {RouterLink} from "@angular/router";
@@ -11,7 +11,8 @@ import {HeroSearchComponent} from "../hero-search/hero-search.component";
   imports: [
     NgForOf,
     RouterLink,
-    HeroSearchComponent
+    HeroSearchComponent,
+    NgOptimizedImage
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'

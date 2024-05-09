@@ -2,6 +2,7 @@
 /* Application-wide Styles */
 h1 {
   color: #369;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
@@ -12,6 +13,9 @@ h2, h3 {
 }
 body {
   margin: 2em;
+  background-image: url("https://papers.co/wallpaper/papers.co-ae09-batman-white-minimal-illust-art-hero-29-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
 }
 body, input[type="text"], button {
   color: #333;
