@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { MessageService } from '../message.service';
+import {Component} from '@angular/core';
+import {MessageService} from '../services/message.service';
 import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
