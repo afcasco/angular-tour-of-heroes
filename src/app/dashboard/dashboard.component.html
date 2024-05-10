@@ -2,7 +2,7 @@
 <div class="heroes-menu">
   @for (hero of heroes; track heroes) {
     <a routerLink="/detail/{{ hero.id }}">
-      <img ngSrc="{{ hero.image}}" height="60" width="60" alt="hero-avatar"/>
+      <img ngSrc="{{ hero.image }}" height="60" width="60" alt="hero-avatar"/>
       {{ hero.name }}
     </a>
   }
