@@ -25,12 +25,13 @@ h2 {
 
 a {
   background-color: #3f525c;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+
   color: #fff;
   text-align: center;
   align-items: center;
@@ -53,8 +54,9 @@ a {
 }
 
 img {
-  border-radius: 25px;
+  border-radius: 30px;
   margin-bottom: 0.2rem;
+  mix-blend-mode: luminosity;
 }
 
 a:hover {
